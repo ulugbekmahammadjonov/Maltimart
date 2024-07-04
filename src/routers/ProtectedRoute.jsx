@@ -1,11 +1,10 @@
 import React from 'react'
-
-const ProtectedRoute = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+import { useNavigate } from 'react-router-dom'
+import useAuth from '../custom-hooks/useAuth'
+const ProtectedRoute = ({children}) => {
+   const navigate = useNavigate()
+   const {currentUser} = useAuth()
+  return currentUser ? children : navigate('/login')
 }
 
 export default ProtectedRoute

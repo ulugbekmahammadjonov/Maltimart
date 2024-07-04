@@ -68,9 +68,34 @@
   margin: 0;
   padding: 0;
 }
-.nav_icons span img {
+.nav_icons .profile img {
   width: 30px;
   height: 30px;
+  cursor: pointer;
+}
+.nav_icons .profile {
+  position: relative;
+  z-index: 9;
+}
+.nav_icons .profile .profile_actions {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  width: 150px;
+  background: var(--card-bg-01);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  line-height: 30px;
+  display: none;
+  cursor: pointer;
+}
+.show_profileActions {
+  display: block !important;
 }
 .mobile_menu {
   font-size: 1.3rem;
@@ -113,7 +138,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
   }
   .active_menu {
     display: block;

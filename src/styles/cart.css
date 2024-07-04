@@ -1,0 +1,12 @@
+.table tbody tr td img {
+ width: 70px !important;
+ height: 70px !important;
+ object-fit: contain;
+}
+td i {
+ cursor: pointer;
+}
+th, td{
+ color: var(--primary-color);
+ /* font-weight: ; */
+}

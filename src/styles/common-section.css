@@ -1,0 +1,28 @@
+.common_section {
+  text-align: center;
+ 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/bedroom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+.common_section h1 {
+  color: #fff;
+
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .common_section {
+    padding: 50px 0px;
+  } 
+  .common_section h1 {
+    font-size: 1.5rem;
+  }
+} 

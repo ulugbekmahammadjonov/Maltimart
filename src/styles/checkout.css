@@ -1,0 +1,35 @@
+.billing__form .form__group input{
+ border: 1px solid var(--card-bg-02);
+}
+
+.checkout__cart{
+  padding: 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+      /* align-items: center;
+      justify-content: space-between; */
+  flex-direction: column;
+}
+.checkout__cart h6, h4 {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem; 
+  margin-bottom: 20px;
+
+} 
+.checkout__cart h4{
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+}
+.auth_btn{
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+ 
